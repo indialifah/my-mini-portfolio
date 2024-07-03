@@ -16,18 +16,18 @@ html {
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 18px; /* Width of the scrollbar */
-    border: 2px solid #FF9843;
-    background-color: #FF9843;
+    border: 2px solid #232B2B;
+    background-color: #232B2B;
 }
  
 ::-webkit-scrollbar-thumb {
     background-color: #FAC551; /* Color of the thumb */
     border-radius: 50px; /* Rounded corners */
-    border: 4px solid #FF9843;
+    border: 4px solid #232B2B;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #232B2B; /* Thumb color on hover */
+    background-color: #FF9843; /* Thumb color on hover */
 }
 
 
@@ -152,7 +152,7 @@ main aside .social-media ul {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     margin: auto;
-    background-color: #FF9843;
+    background-color: #232B2B;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -184,13 +184,14 @@ main aside .social-media li a:hover {
 /* section */
 section {
     padding: 100px;
-    background-color: #FFDD95;
+    
 }
 
 
 /* profile */
 #profile {
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
+    background-color: #FFDD95;
 }
 
 .profile-content .title {
@@ -218,7 +219,7 @@ section {
     background-color: #FF9843;
     /* color: whitesmoke; */ 
     /* border: 4px solid #FF9843; */
-    transform: scale(115%);
+    /* transform: scale(115%); */
     box-shadow: 8px 8px #232B2B;
 }
 
@@ -245,7 +246,7 @@ section {
 
 /* projects */
 #projects {
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 .projects-content .title {
@@ -266,8 +267,9 @@ section {
 .card {
     width: 48%;
     padding: 20px;
-    border: 2px solid #232B2B;
+    border: 2px solid #FAC551;
     border-radius: 20px;
+    background-color: #FFFFFF;
 
     transition: all 0.3s ease;
 }
@@ -284,3 +286,85 @@ section {
 .card .card-desc {
     margin: 10px 0;
 }
+
+/* skills */
+#skills {
+    padding-bottom: 200px;
+    background-color: #FAC551;
+}
+
+.skills-content .title {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-block-end: 1rem;
+    text-align: center;
+}
+.skills-content .title-desc {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-block-end: 2.8rem;
+    text-align: center;
+}
+
+.skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    width: 15%;
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    /* border: 2px solid #232B2B; */
+    border-radius: 20px;
+    background-color: #FFFFFF;
+
+    transition: all 0.3s ease;
+}
+.skill-card:hover {
+    box-shadow: 8px 8px #232B2B;
+    transform: scale(115%);
+    /* background-color: #FFDD95; */
+}
+
+.skill-card .skill-img {
+    width: 60px;
+    height: 80px;
+}
+
+.skill-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #FAC551;
+}
+
+/* scroll button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ffffff85;
+    border: 3px solid #232B2B;
+    padding: 6px 10px 10px 10px;
+    border-radius: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 50;
+  }
+  .scroll-to-top.visible {
+    display: block;
+  }
+  .scroll-to-top:hover {
+    transition: transform 0.3s ease-in-out;
+    background-color: #FF9843;
+  }
+  
